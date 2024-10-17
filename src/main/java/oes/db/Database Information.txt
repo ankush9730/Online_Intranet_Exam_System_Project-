@@ -1,0 +1,74 @@
+CREATE TABLE studenttable (
+    USERID VARCHAR2(20) NOT NULL,
+    PASSWORD VARCHAR2(20),
+    NAME VARCHAR2(50),
+    EMAILID VARCHAR2(50),
+    CONSTRAINT pk_studenttable PRIMARY KEY (USERID)
+);
+
+CREATE TABLE admintable (
+    USERID VARCHAR2(20) NOT NULL,
+    PASSWORD VARCHAR2(20),
+    CONSTRAINT pk_admintable PRIMARY KEY (USERID)
+);
+
+CREATE TABLE instructiontable (
+    INSTRUCTION VARCHAR2(100) NOT NULL,
+    CONSTRAINT pk_instructiontable PRIMARY KEY (INSTRUCTION)
+);
+
+CREATE TABLE questiontable (
+    QUESTION VARCHAR2(100),
+    A VARCHAR2(100),
+    B VARCHAR2(100),
+    C VARCHAR2(100),
+    D VARCHAR2(100),
+    ANSWER VARCHAR2(100),
+    CONSTRAINT pk_questiontable PRIMARY KEY (QUESTION)
+);
+
+
+
+SQL> desc studenttable;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- -------------------------
+ USERID                                    NOT NULL VARCHAR2(20)
+ PASSWORD                                           VARCHAR2(20)
+ NAME                                               VARCHAR2(50)
+ EMAILID                                            VARCHAR2(50)
+
+SQL> desc admintable;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- -----------------------
+ USERID                                    NOT NULL VARCHAR2(20)
+ PASSWORD                                           VARCHAR2(20)
+
+SQL> desc instructiontable;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- -------------------------
+ INSTRUCTION                               NOT NULL VARCHAR2(100)
+
+SQL> desc questiontable;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ---------------------
+ QUESTION                                           VARCHAR2(100)
+ A                                                  VARCHAR2(100)
+ B                                                  VARCHAR2(100)
+ C                                                  VARCHAR2(100)
+ D                                                  VARCHAR2(100)
+ ANSWER                                             VARCHAR2(100)
+
+
+SQL> desc questiontable;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- --------------------------
+ QUESTION                                           VARCHAR2(100)
+ A                                                  VARCHAR2(100)
+ B                                                  VARCHAR2(100)
+ C                                                  VARCHAR2(100)
+ D                                                  VARCHAR2(100)
+ ANSWER                                             VARCHAR2(100)
+
+
+
+
